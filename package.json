@@ -1,6 +1,6 @@
 {
   "name": "myvue-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Vue.js project",
   "homepage": "http://myvue-component.surge.sh",
   "keyword": [
@@ -18,8 +18,8 @@
   "scripts": {
     "dev": "poi --config .storybook/poi.config.js --storybook --open",
     "build:storybook": "poi build --config .storybook/poi.config.js --storybook",
-    "build:component": "poi build components/MyvueComponent.vue --library",
-    "build:component:umd": "poi build components/MyvueComponent.vue --library MyvueComponent --dist umd",
+    "build:component": "poi build src/components/MyvueComponent.vue --library",
+    "build:component:umd": "poi build src/components/MyvueComponent.vue --library MyvueComponent --dist umd",
     "deploy": "surge .storybook/dist"
   },
   "devDependencies": {
